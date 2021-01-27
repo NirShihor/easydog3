@@ -3,8 +3,6 @@ const app = express();
 const path = require("path");
 // const ejs = require("ejs");
 
-app.set("view engine", "html");
-
 let port = process.env.PORT;
 if (port == null || port == "") {
   port = 3000;
