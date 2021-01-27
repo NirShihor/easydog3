@@ -16,6 +16,20 @@ html {
   }
 }
 
+.header-div {
+  display: flex;
+  background-image: url("viszla full.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  min-height: 20rem;
+}
+
+@media screen and (min-width: 600px) {
+  .header-div {
+    min-height: 35rem;
+  }
+}
+
 .topnav {
   padding-top: 1rem;
   position: relative;
