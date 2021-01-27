@@ -23,9 +23,9 @@ html {
 }
 
 .topnav a {
-  float: left;
+  float: none;
   display: block;
-  color: orange;
+  color: white;
   text-align: center;
   padding: 1rem;
   text-decoration: none;
@@ -49,21 +49,18 @@ html {
   color: white;
 }
 
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
+@media screen and (min-width: 601px) {
+  .topnav a {
+    float: left;
+    display: inline;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {
-    position: relative;
+  .topnav {
+    position: absolute;
   }
-  .topnav.responsive .icon {
+  .topnav .icon {
     position: absolute;
     right: 0;
     top: 0;
