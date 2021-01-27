@@ -17,6 +17,7 @@ html {
 }
 
 .topnav {
+  padding-top: 1rem;
   position: relative;
   overflow: hidden;
   background-color: transparent;
@@ -26,8 +27,9 @@ html {
   float: none;
   display: block;
   color: white;
-  text-align: center;
+  text-align: left;
   padding: 1rem;
+  padding-top: 0.3rem;
   text-decoration: none;
   font-size: 1rem;
 }
@@ -74,7 +76,7 @@ html {
 
 .logo-container {
   position: absolute;
-  right: 2vw;
+  right: 1vw;
 }
 
 .logo-container img {
