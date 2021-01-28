@@ -39,7 +39,7 @@ html {
   display: block;
   color: white;
   text-align: left;
-  padding: 0.8rem;
+  padding: 0.7rem;
   padding-top: 0.3rem;
   text-decoration: none;
   font-size: 1.1rem;
@@ -68,7 +68,19 @@ html {
     display: inline;
   }
   .logo-container img {
-    height: 17vh !important;
+    height: 20vh !important;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .logo-container img {
+    height: 20vh !important;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .logo-container img {
+    height: 25vh !important;
   }
 }
 
@@ -102,7 +114,7 @@ html {
 }
 
 .logo-container img {
-  height: 15vh;
+  height: 13vh;
 }
 
 .main-div {
