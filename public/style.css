@@ -7,6 +7,7 @@ html {
   font-size: 16px;
   box-sizing: border-box;
   line-height: 1.4;
+  font-family: "Roboto", sans-serif;
 }
 
 @media only screen and (max-width: 900px) {
@@ -41,7 +42,7 @@ html {
   padding: 0.8rem;
   padding-top: 0.3rem;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .topnav a:hover {
@@ -75,7 +76,7 @@ html {
 @media screen and (max-width: 400px) {
   .topnav a {
     padding-top: 0rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 
@@ -110,5 +111,11 @@ html {
 }
 
 h3 {
+  font-size: large;
   text-align: center;
+}
+
+p {
+  font-size: larger;
+  line-height: 1.8rem;
 }
