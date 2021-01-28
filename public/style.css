@@ -16,23 +16,19 @@ html {
   }
 }
 
-.header-div {
-  display: flex;
-  background-image: url("viszla full.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  min-height: 20rem;
+.header-img {
+  position: relative;
+  z-index: -1;
 }
 
-@media screen and (min-width: 600px) {
-  .header-div {
-    min-height: 35rem;
-  }
+.header-img img {
+  width: 100%;
+  height: auto;
 }
 
 .topnav {
   padding-top: 1rem;
-  position: relative;
+  position: absolute;
   overflow: hidden;
   background-color: transparent;
 }
@@ -106,4 +102,13 @@ html {
 
 .logo-container img {
   height: 15vh;
+}
+
+.main-div {
+  top: 0;
+  padding: 0rem 2rem 1rem 2rem;
+}
+
+h3 {
+  text-align: center;
 }
