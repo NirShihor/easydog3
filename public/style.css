@@ -18,7 +18,6 @@ html {
 }
 
 .header-img {
-  position: relative;
   z-index: -1;
 }
 
@@ -27,11 +26,15 @@ html {
   height: auto;
 }
 
-.topnav {
+/* TEMP
+ */
+
+.topnav,
+.nav {
   padding-top: 1rem;
-  position: absolute;
   overflow: hidden;
-  background-color: transparent;
+  background-color: rgb(152, 153, 155);
+  min-height: 6rem;
 }
 
 .topnav a {
@@ -62,10 +65,16 @@ html {
   color: white;
 }
 
+.logo-container {
+  position: absolute;
+  right: 1vw;
+}
+
 @media screen and (min-width: 601px) {
   .topnav a {
     float: left;
     display: inline;
+    margin-top: 1.6rem;
   }
   .logo-container img {
     height: 20vh !important;
@@ -74,21 +83,25 @@ html {
 
 @media screen and (min-width: 450px) {
   .logo-container img {
-    height: 20vh !important;
+    height: 18vh !important;
+    padding-top: 1rem;
   }
 }
 
 @media screen and (min-width: 850px) {
   .logo-container img {
-    height: 25vh !important;
+    height: 20vh !important;
   }
 }
 
 /* iPhone SE */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 460px) {
   .topnav a {
     padding-top: 0rem;
     font-size: 1rem;
+  }
+  .logo-container img {
+    height: 20vh !important;
   }
 }
 
@@ -106,15 +119,6 @@ html {
     display: block;
     text-align: left;
   }
-}
-
-.logo-container {
-  position: absolute;
-  right: 1vw;
-}
-
-.logo-container img {
-  height: 13vh;
 }
 
 .main-div {
