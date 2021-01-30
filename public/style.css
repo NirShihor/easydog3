@@ -182,4 +182,10 @@ p img {
 
 .sign {
   text-align: right;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+.test-text {
+  padding-bottom: 0rem;
 }
