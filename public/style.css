@@ -189,3 +189,16 @@ p img {
 .test-text {
   padding-bottom: 0rem;
 }
+
+#services-list {
+  padding-top: 2rem;
+}
+
+#services-list > li {
+  font-size: 1.3rem;
+}
+
+#call-now {
+  text-align: center;
+  padding-bottom: 2rem;
+}

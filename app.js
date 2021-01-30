@@ -27,6 +27,10 @@ app.get("/testimonials", function (req, res) {
   res.render("testimonials.ejs");
 });
 
+app.get("/services", function (req, res) {
+  res.render("services.ejs");
+});
+
 app.listen(port, function () {
   console.log("Server started successfully");
 });
