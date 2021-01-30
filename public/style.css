@@ -68,29 +68,42 @@ html {
 .logo-container {
   position: absolute;
   right: 1vw;
+  top: 0.5rem;
+}
+
+.logo-container img {
+  height: 1rem !important;
 }
 
 @media screen and (min-width: 601px) {
+  .topnav {
+    padding-left: 1rem;
+  }
   .topnav a {
     float: left;
     display: inline;
-    margin-top: 1.6rem;
+    margin-top: 1.2rem;
   }
   .logo-container img {
     height: 20vh !important;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .topnav {
+    padding-left: 4rem;
   }
 }
 
 @media screen and (min-width: 450px) {
   .logo-container img {
     height: 18vh !important;
-    padding-top: 1rem;
   }
 }
 
 @media screen and (min-width: 850px) {
   .logo-container img {
-    height: 20vh !important;
+    height: 17vh !important;
   }
 }
 
@@ -134,4 +147,35 @@ h3 {
 p {
   font-size: larger;
   line-height: 1.8rem;
+  padding: 2rem;
+}
+
+p img {
+  height: 6rem;
+  float: left;
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.text-container {
+  width: 90%;
+  margin: auto;
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.2),
+    -30px 0px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+}
+
+@media screen and (min-width: 700px) {
+  .text-container {
+    width: 70%;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .header-img {
+    height: 40rem;
+    overflow: hidden;
+  }
 }

@@ -19,6 +19,10 @@ app.get("/about", function (req, res) {
   res.render("about.ejs");
 });
 
+app.get("/whyEasyDog", function (req, res) {
+  res.render("whyEasyDog.ejs");
+});
+
 app.listen(port, function () {
   console.log("Server started successfully");
 });
