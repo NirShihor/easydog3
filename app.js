@@ -23,6 +23,10 @@ app.get("/whyEasyDog", function (req, res) {
   res.render("whyEasyDog.ejs");
 });
 
+app.get("/testimonials", function (req, res) {
+  res.render("testimonials.ejs");
+});
+
 app.listen(port, function () {
   console.log("Server started successfully");
 });

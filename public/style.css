@@ -179,3 +179,7 @@ p img {
     overflow: hidden;
   }
 }
+
+.sign {
+  text-align: right;
+}
