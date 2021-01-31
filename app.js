@@ -31,6 +31,10 @@ app.get("/services", function (req, res) {
   res.render("services.ejs");
 });
 
+app.get("/contact", function (req, res) {
+  res.render("contact.ejs");
+});
+
 app.listen(port, function () {
   console.log("Server started successfully");
 });

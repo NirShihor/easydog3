@@ -1,0 +1,28 @@
+<header><%- include ("../partials/header.ejs") %></header>
+<div class="header-img">
+  <img src="/dwarf-griffon-min.jpg" alt="" />
+</div>
+<div class="main-div">
+  <h3>Get In Touch</h3>
+  <div class="contact-text text-container">
+    <div id="contact">
+      <form method="POST" action="send">
+        <p>
+          <label>Name</label><br />
+          <input type="text" name="name" />
+        </p>
+        <p>
+          <label>Email</label><br />
+          <input type="email" name="email" />
+        </p>
+        <p>
+          <label>Message</label><br />
+          <textarea name="message" rows="5"></textarea>
+        </p>
+        <p>
+          <button type="submit">Submit</button>
+        </p>
+      </form>
+    </div>
+  </div>
+</div>

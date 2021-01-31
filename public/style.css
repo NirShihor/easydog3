@@ -29,20 +29,25 @@ html {
 /* TEMP
  */
 
+.topnav {
+  float: left;
+}
+
 .topnav,
 .nav {
   padding-top: 1.5rem;
   overflow: hidden;
-  background-color: rgb(152, 153, 155);
+  background-color: transparent;
   min-height: 6rem;
 }
 
 .topnav a {
   float: none;
   display: block;
-  color: white;
+  color: #30769d;
   text-align: left;
-  padding: 0.7rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
   padding-top: 0.3rem;
   text-decoration: none;
   font-size: 1.1rem;
@@ -65,10 +70,17 @@ html {
   color: white;
 }
 
+.top-container {
+  position: absolute;
+  display: flex;
+  width: 100%;
+}
+
 .logo-container {
   position: absolute;
   right: 1vw;
-  top: 0.5rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
 }
 
 .logo-container img {
@@ -77,12 +89,12 @@ html {
 
 @media screen and (min-width: 601px) {
   .topnav {
-    padding-left: 1rem;
+    padding-left: 0.5rem;
   }
   .topnav a {
     float: left;
     display: inline;
-    margin-top: 1.2rem;
+    margin-top: 0rem;
   }
   .logo-container img {
     height: 20vh !important;
@@ -103,7 +115,7 @@ html {
 
 @media screen and (min-width: 850px) {
   .logo-container img {
-    height: 17vh !important;
+    height: 25vh !important;
   }
 }
 
@@ -147,7 +159,7 @@ h3 {
 p {
   font-size: larger;
   line-height: 1.8rem;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 p img {
@@ -201,4 +213,15 @@ p img {
 #call-now {
   text-align: center;
   padding-bottom: 2rem;
+}
+
+.contact-text {
+  padding: 1.5rem;
+  width: 60%;
+}
+
+#contact {
+  text-align: center;
+  width: 100%;
+  margin: auto;
 }
