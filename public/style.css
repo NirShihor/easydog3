@@ -56,7 +56,7 @@ html {
 
 @media screen and (max-width: 400px) {
   .topnav a {
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
   }
 }
 .topnav a:hover {
