@@ -54,6 +54,11 @@ html {
   font-weight: 900;
 }
 
+@media screen and (max-width: 400px) {
+  .topnav a {
+    font-size: 1rem;
+  }
+}
 .topnav a:hover {
   background-color: #ddd;
   color: black;
