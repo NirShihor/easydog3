@@ -164,6 +164,16 @@ p {
   padding: 1rem;
 }
 
+@media screen and (min-width: 550px) {
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+}
 p img {
   height: 6rem;
   float: left;
@@ -189,7 +199,7 @@ p img {
   }
 
   .header-img {
-    height: 40rem;
+    height: 30rem;
     overflow: hidden;
   }
 }
@@ -232,6 +242,7 @@ textarea {
   width: 90%;
 }
 
+/* To display line under clicked navbar link */
 .active {
   text-decoration-line: underline !important;
   text-decoration-thickness: 2px !important;
