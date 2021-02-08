@@ -6,7 +6,7 @@
   <h3>Get In Touch</h3>
   <div class="contact-text text-container">
     <div id="contact">
-      <form method="POST" action="send">
+      <form method="POST" action="/send">
         <p>
           <label>Name</label><br />
           <input class="input-field" type="text" name="name" />
@@ -22,6 +22,7 @@
         <p>
           <button type="submit">Submit</button>
         </p>
+        <div class="message"><%- include ("../partials/messages") %></div>
       </form>
     </div>
   </div>
