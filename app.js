@@ -27,27 +27,27 @@ app.set("views", path.join(__dirname, "views")); //This should maybe be deleted
 app.set("view engine", "ejs");
 
 app.get("/", function (req, res) {
-  res.render("/index");
+  res.render("views/index");
 });
 
 app.get("/about", function (req, res) {
-  res.render("/about");
+  res.render("about");
 });
 
 app.get("/whyEasyDog", function (req, res) {
-  res.render("/whyEasyDog");
+  res.render("whyEasyDog");
 });
 
 app.get("/testimonials", function (req, res) {
-  res.render("/testimonials");
+  res.render("testimonials");
 });
 
 app.get("/services", function (req, res) {
-  res.render("/services");
+  res.render("services");
 });
 
 app.get("/contact", function (req, res) {
-  res.render("/contact");
+  res.render("contact");
   req.flash("success_msg");
 });
 
