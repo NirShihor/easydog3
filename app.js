@@ -27,7 +27,7 @@ app.set("views", path.join(__dirname, "views")); //This should maybe be deleted
 app.set("view engine", "ejs");
 
 app.get("/", function (req, res) {
-  res.render("index");
+  res.redirect("index");
 });
 
 app.get("/about", function (req, res) {
