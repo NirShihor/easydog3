@@ -1,4 +1,3 @@
-require("dotenv").config();
 const express = require("express");
 const app = express();
 const session = require("express-session");
@@ -6,13 +5,11 @@ const flash = require("connect-flash");
 const bodyParser = require("body-parser"); //Once everything is working check if required here
 const DOMAIN = "easydog.co.uk";
 
-const api_key = process.env.API_KEY;
-
 // For Mailgun
 const mailgun = require("mailgun-js");
 
 const mg = mailgun({
-  apiKey: api_key,
+  apiKey: process.env.API_KEY,
   domain: DOMAIN,
   host: "api.eu.mailgun.net", //this is required when in Europe or else will not send and will get a 'forbidden' error 401
 });
