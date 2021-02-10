@@ -53,6 +53,10 @@ app.get("/contact", function (req, res) {
 
 app.post("/send", mailSend);
 
-app.listen(port, function () {
-  console.log("Server started successfully");
+app.listen(process.env.PORT || 3000, function () {
+  console.log(
+    "Express server listening on port %d in %s mode",
+    this.address().port,
+    app.settings.env
+  );
 });
