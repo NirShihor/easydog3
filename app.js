@@ -9,10 +9,10 @@ const bodyParser = require("body-parser");
 const flash = require("connect-flash");
 const mail = require("./mail"); //use mail.js file - sending mail through contact fortm
 
-let port = process.env.PORT;
-if (port == null || port == "") {
-  port = 3000;
-}
+const port = process.env.PORT || 8080;
+// if (port == null || port == "") {
+//   port = 3000;
+// }
 
 mailSend = mail.sendMail; //Function parameters in mail.js from form (contact.ejs) for post request below
 
@@ -54,5 +54,5 @@ app.get("/contact", function (req, res) {
 app.post("/send", mailSend);
 
 app.listen(port, function () {
-  console.log("Server started successfully");
+  console.log("Server started successfully on port", port);
 });
