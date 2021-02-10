@@ -25,7 +25,6 @@ sendAMessage = mail.sendNewMessage;
 
 app.set("views", path.join(__dirname, "views")); //This should maybe be deleted
 app.set("view engine", "ejs");
-app.set("port", PORT);
 
 app.get("/", function (req, res) {
   res.render("index");
@@ -54,6 +53,6 @@ app.get("/contact", function (req, res) {
 
 app.post("/send", mailSend);
 
-app.listen(port, function () {
+app.listen(PORT, function () {
   console.log("Server started successfully");
 });
