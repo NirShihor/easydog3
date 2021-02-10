@@ -9,7 +9,7 @@ const bodyParser = require("body-parser");
 const flash = require("connect-flash");
 const mail = require("./mail"); //use mail.js file - sending mail through contact fortm
 
-let port = process.env.PORT;
+const port = process.env.PORT;
 if (port == null || port == "") {
   port = 3000;
 }
