@@ -9,10 +9,10 @@ const bodyParser = require("body-parser");
 const flash = require("connect-flash");
 const mail = require("./mail"); //use mail.js file - sending mail through contact fortm
 
-const port = process.env.PORT || 8080;
-// if (port == null || port == "") {
-//   port = 3000;
-// }
+const port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
 
 mailSend = mail.sendMail; //Function parameters in mail.js from form (contact.ejs) for post request below
 
@@ -27,7 +27,7 @@ app.set("views", path.join(__dirname, "views")); //This should maybe be deleted
 app.set("view engine", "ejs");
 
 app.get("/", function (req, res) {
-  res.render("index");
+  res.render("index.ejs");
 });
 
 app.get("/about", function (req, res) {
