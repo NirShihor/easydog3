@@ -48,7 +48,7 @@ app.get("/services", function (req, res) {
 
 app.get("/contact", function (req, res) {
   res.render("contact");
-  req.flash("success_msg");
+  // req.flash("success_msg");
 });
 
 app.post("/send", mailSend);
