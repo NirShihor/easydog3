@@ -213,6 +213,10 @@ p img {
     height: 30rem;
     overflow: hidden;
   }
+  textarea {
+    width: 70%;
+    font-size: 17px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -257,7 +261,7 @@ p img {
 }
 
 textarea {
-  width: 70%;
+  width: 90%;
   font-size: 17px;
 }
 
@@ -278,6 +282,10 @@ input[type="email"] {
   padding-top: 1vh;
   color: rgb(84, 180, 84);
   font-size: 1.1rem;
+}
+
+.success-msg {
+  color: rgb(84, 180, 84);
 }
 
 /* To display line under clicked navbar link */
