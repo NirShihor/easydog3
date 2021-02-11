@@ -210,6 +210,13 @@ p img {
   }
 
   .header-img {
+    height: 30rem;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .header-img {
     height: 50rem;
     overflow: hidden;
   }
@@ -251,6 +258,26 @@ p img {
 
 textarea {
   width: 70%;
+  font-size: 17px;
+}
+
+input[type="text"] {
+  font-size: 17px;
+}
+
+input[type="email"] {
+  font-size: 17px;
+}
+
+.email-ensure {
+  font-size: 13px;
+}
+
+.message {
+  text-align: center;
+  padding-top: 1vh;
+  color: rgb(84, 180, 84);
+  font-size: 1.1rem;
 }
 
 /* To display line under clicked navbar link */

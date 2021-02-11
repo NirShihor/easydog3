@@ -1,6 +1,7 @@
 <header><%- include ("../partials/header.ejs") %></header>
 <div class="header-img">
   <img src="/dwarf-griffon-min.jpg" alt="" />
+  <div class="message"><%- include ("../partials/messages") %></div>
 </div>
 <div class="main-div">
   <h3>Get In Touch</h3>
@@ -12,8 +13,10 @@
           <input class="input-field" type="text" name="name" />
         </p>
         <p>
-          <label>Email</label><br />
-          <input class="input-field" type="email" name="email" />
+          <label>Email </label>
+          <br />
+          <input class="input-field" type="email" name="email" /><br />
+          <span class="email-ensure">(please ensure it is correct)</span>
         </p>
         <p>
           <label>Message</label><br />
@@ -22,7 +25,6 @@
         <p>
           <button type="submit">Submit</button>
         </p>
-        <div class="message"><%- include ("../partials/messages") %></div>
       </form>
     </div>
   </div>
