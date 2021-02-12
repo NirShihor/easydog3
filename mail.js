@@ -27,15 +27,11 @@ exports.mailSession = mailSession;
 
 app.use(flash());
 
-// function sendMessage() {
 app.use(function (req, res, next) {
   res.locals.success_msg = req.flash("success_msg");
   res.locals.error_msg = req.flash("error_msg");
   next();
 });
-// }
-
-// exports.sendNewMessage = sendMessage;
 
 app.use(bodyParser.urlencoded({ extended: false })); //Once everything is working check if required here
 
@@ -58,11 +54,13 @@ function sendMail(req, res) {
   });
 
   console.log(data);
-  req.flash("error_msg", "Something went wrong. Please try again.");
+  // req.flash("error_msg", "Something went wrong. Please try again.");
   req.flash(
     "success_msg",
     "Your message has been received and a reply will be sent shortly."
   );
+
+  console.log("and also here");
 
   res.redirect("contact");
 }

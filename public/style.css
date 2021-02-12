@@ -213,10 +213,6 @@ p img {
     height: 30rem;
     overflow: hidden;
   }
-  textarea {
-    width: 70%;
-    font-size: 17px;
-  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -261,7 +257,6 @@ p img {
 }
 
 textarea {
-  width: 90%;
   font-size: 1rem;
 }
 
@@ -277,7 +272,8 @@ input[type="email"] {
   text-align: center;
   padding-top: 1vh;
   color: rgb(84, 180, 84);
-  font-size: 1.1rem;
+  font-size: 1.3rem;
+  padding-bottom: 1.5rem;
 }
 
 .success-msg {
@@ -293,5 +289,12 @@ input[type="email"] {
 
 .input-field {
   height: 2rem;
-  width: 15rem;
+}
+
+button {
+  width: 5rem;
+  height: 1.8rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 0.4rem;
 }
