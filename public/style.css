@@ -89,10 +89,6 @@ html {
   padding-right: 1rem;
 }
 
-.logo-container img {
-  height: 1rem !important;
-}
-
 @media screen and (min-width: 650px) {
   .topnav {
     padding-left: 0.5rem;
@@ -114,6 +110,12 @@ html {
 @media screen and (min-width: 450px) and (max-width: 699px) {
   .logo-container img {
     height: 18vh !important;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 849px) {
+  .logo-container img {
+    height: 35vh !important;
   }
 }
 
