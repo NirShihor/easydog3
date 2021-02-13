@@ -4,7 +4,6 @@ const app = express();
 const session = require("express-session");
 const path = require("path");
 const ejs = require("ejs");
-var expressLayouts = require("express-ejs-layouts");
 const bodyParser = require("body-parser");
 const flash = require("connect-flash");
 const mail = require("./mail"); //use mail.js file - sending mail through contact fortm
@@ -16,6 +15,11 @@ if (port == null || port == "") {
 
 mailSend = mail.sendMail; //Function parameters in mail.js from form (contact.ejs) for post request below
 
+// TEMP
+app.use(function (err, req, res, next) {
+  console.error(err.stack);
+  res.status(500).send("Something broke!");
+});
 app.use(mail.mailSession); //This passes the session from mail.js as without it throws an error re flash requiring sessions
 app.use(flash());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -50,7 +54,7 @@ app.get("/contact", function (req, res) {
   res.render("contact");
 });
 
-app.post("/send", mailSend);
+app.post("/contact", mailSend);
 
 app.listen(port, function () {
   console.log("Server started successfully on port", port);

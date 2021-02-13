@@ -8,20 +8,20 @@
 
   <div class="contact-text text-container">
     <div id="contact">
-      <form method="POST" action="/send">
-        <p>
+      <form method="POST" action="/contact">
+        <div class="form-field>">
           <label>Name</label><br />
-          <input class="input-field" type="text" name="name" />
-        </p>
-        <p>
+          <input class="input-field" type="text" name="name" required />
+        </div>
+        <div class="form-field">
           <label>Email </label>
           <br />
-          <input class="input-field" type="email" name="email" />
-        </p>
-        <p>
+        </div>
+        <input class="input-field" type="email" name="email" required />
+        <div class="form-field">
           <label>Message</label><br />
-          <textarea name="message" rows="8"></textarea>
-        </p>
+          <textarea name="message" rows="8" required></textarea>
+        </div>
         <p>
           <button type="submit">Submit</button>
         </p>

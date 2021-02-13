@@ -26,6 +26,7 @@ const mailSession = app.use(
 exports.mailSession = mailSession;
 
 app.use(flash());
+app.use(express.json());
 
 app.use(function (req, res, next) {
   res.locals.success_msg = req.flash("success_msg");
@@ -39,10 +40,13 @@ app.use(bodyParser.urlencoded({ extended: false })); //Once everything is workin
 function sendMail(req, res) {
   const data = {
     name: req.body.name,
+    errors: { name: { msg: "Name is required" } },
     from: req.body.email,
+    errors: { email: { msg: "Email is required" } },
     subject: "A message from your website",
     to: "info@easydog.co.uk",
     text: req.body.message,
+    errors: { text: { msg: "A message is required" } },
   };
   console.log("and here");
 

@@ -298,3 +298,16 @@ button {
   cursor: pointer;
   border-radius: 0.4rem;
 }
+
+.input-field {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 600px) {
+  .input-field {
+    width: 30%;
+  }
+  textarea {
+    width: 60%;
+  }
+}
