@@ -103,9 +103,6 @@ html {
     margin-top: 0rem;
     padding-left: 0.7rem;
   }
-  .logo-container img {
-    height: 20vh !important;
-  }
 }
 
 @media screen and (min-width: 800px) {
