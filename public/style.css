@@ -217,8 +217,7 @@ p img {
   }
 
   .header-img {
-    height: 30rem;
-    overflow: hidden;
+    height: 25rem;
   }
 }
 
