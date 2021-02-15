@@ -26,9 +26,6 @@ html {
   height: auto;
 }
 
-/* TEMP
- */
-
 .topnav {
   float: left;
 }
@@ -109,19 +106,19 @@ html {
 
 @media screen and (min-width: 450px) and (max-width: 699px) {
   .logo-container img {
-    height: 25vh !important;
+    height: 15vh !important;
   }
 }
 
 @media screen and (min-width: 700px) and (max-width: 849px) {
   .logo-container img {
-    height: 35vh !important;
+    height: 20vh !important;
   }
 }
 
 @media screen and (min-width: 850px) {
   .logo-container img {
-    height: 35vh !important;
+    height: 20vh !important;
   }
 }
 
@@ -132,7 +129,7 @@ html {
     font-size: 1rem;
   }
   .logo-container img {
-    height: 13vh !important;
+    height: 11vh !important;
   }
 }
 
@@ -210,7 +207,7 @@ p img {
 
 @media screen and (min-width: 1000px) {
   .header-img {
-    height: 50rem;
+    height: 35rem;
     overflow: hidden;
   }
 }
