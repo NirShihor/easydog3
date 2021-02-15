@@ -196,6 +196,14 @@ p {
     line-height: 1.8rem;
   }
 }
+
+@media screen and (min-width: 751px) {
+  p {
+    font-size: 1.2rem !important;
+    line-height: 1.8rem;
+  }
+}
+
 p img {
   height: 6rem;
   float: left;
