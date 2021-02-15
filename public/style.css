@@ -203,6 +203,10 @@ p img {
   padding-right: 0.5rem;
 }
 
+.bullet {
+  font-size: 1.5rem !important;
+}
+
 .text-container {
   position: relative;
   width: 90%;
