@@ -89,22 +89,15 @@ html {
   padding-right: 1rem;
 }
 
-@media screen and (min-width: 650px) {
-  .topnav {
-    padding-left: 0.5rem;
-  }
-  .topnav a {
-    float: left;
-    display: inline;
-    margin-top: 0rem;
-    padding-left: 0.7rem;
-    margin-bottom: 0rem;
-  }
-}
-
 @media screen and (min-width: 800px) {
   .topnav {
     padding-left: 4rem;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  p {
+    font-size: 1.3rem !important;
   }
 }
 
