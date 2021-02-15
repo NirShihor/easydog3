@@ -43,15 +43,17 @@ html {
   display: block;
   color: #a50acc;
   text-align: left;
-  padding: 0.5rem;
+  padding: 0.3rem;
   padding-left: 1rem;
-  padding-top: 0.3rem;
   text-decoration: none;
   font-size: 1.2rem !important;
   font-weight: 900;
 }
 
 @media screen and (max-width: 400px) {
+  .topnav {
+    padding-top: 0.5rem;
+  }
   .topnav a {
     font-size: 0.9rem !important;
   }
@@ -95,6 +97,7 @@ html {
     display: inline;
     margin-top: 0rem;
     padding-left: 0.7rem;
+    margin-bottom: 0rem;
   }
 }
 
