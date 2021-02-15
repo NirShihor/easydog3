@@ -106,7 +106,7 @@ html {
 
 @media screen and (min-width: 450px) and (max-width: 699px) {
   .logo-container img {
-    height: 15vh !important;
+    height: 10vh !important;
   }
 }
 

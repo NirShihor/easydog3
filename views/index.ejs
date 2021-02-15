@@ -47,7 +47,7 @@
       </div>
     </div>
     <div class="main-div">
-      <h3>Welcome To Easy Dog Training</h3>
+      <h3 class="lax" data-lax-translate-y="0 0, 400 -400">Welcome To Easy Dog Training</h3>
       <div class="welcome-text text-container">
         <p>
           Training your puppy or dog should not be stressful or particularly
@@ -61,16 +61,31 @@
     </div>
     </div>
 
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
+          <!-- Lax.js -->
+<script src="path-to-lax.min.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/lax.js"></script>
 
+    <script>
+
+      // Lax.js
+    window.onload = function () {
+      lax.init();
+
+      // Add a driver that we use to control our animations
+      lax.addDriver("scrollY", function () {
+        return window.scrollY;
+      });
+
+      // Add animation bindings to elements
+      lax.addElements(".selector", {
+        scrollY: {
+          translateX: [
+            ["elInY", "elCenterY", "elOutY"],
+            [0, "screenWidth/2", "screenWidth"],
+          ],
+        },
+      });
+    };
     </script>
   </body>
 </html>
