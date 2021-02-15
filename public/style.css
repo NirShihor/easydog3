@@ -89,6 +89,10 @@ html {
   padding-right: 1rem;
 }
 
+.logo-container img {
+  height: 7vh !important;
+}
+
 @media screen and (min-width: 800px) {
   .topnav {
     padding-left: 4rem;
@@ -126,12 +130,12 @@ html {
     padding-top: 0rem;
     font-size: 1rem;
   }
-  .logo-container img {
+  . {
     height: 11vh !important;
   }
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 750px) {
   .topnav a {
     display: inline;
   }
