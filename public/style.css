@@ -138,7 +138,7 @@ html {
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 700px) {
+@media screen and (min-width: 600px) and (max-width: 800px) {
   .topnav a {
     font-size: 1rem !important;
   }
