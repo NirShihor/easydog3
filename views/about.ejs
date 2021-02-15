@@ -4,7 +4,7 @@
 </div>
 <div class="main-div">
   <h3>About Easy Dog</h3>
-  <div class="welcome-text text-container">
+  <div class="welcome-text text-container selector">
     <p>
       <img src="/nirAndRobbie-min.jpg" alt="Nir and his Dog Robbie" />
       My name is Nir and I am owner and trainer at Easy Dog Training. I have
@@ -21,3 +21,26 @@
     </p>
   </div>
 </div>
+
+<!-- Lax.js -->
+<script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+<script>
+  window.onload = function () {
+    lax.init();
+
+    // Add a driver that we use to control our animations
+    lax.addDriver("scrollY", function () {
+      return window.scrollY;
+    });
+
+    // Add animation bindings to elements
+    lax.addElements(".selector", {
+      scrollY: {
+        translateY: [
+          [0, 200],
+          [0, -100],
+        ],
+      },
+    });
+  };
+</script>
