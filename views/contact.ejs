@@ -6,7 +6,7 @@
   <h3>Get In Touch</h3>
   <div class="message"><%- include ("../partials/messages") %></div>
 
-  <div class="contact-text text-container">
+  <div class="contact-text text-container selector">
     <div id="contact">
       <form method="POST" action="/contact">
         <div class="form-field>">
@@ -31,3 +31,26 @@
     </div>
   </div>
 </div>
+
+<!-- Lax.js -->
+<script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+<script>
+  window.onload = function () {
+    lax.init();
+
+    // Add a driver that we use to control our animations
+    lax.addDriver("scrollY", function () {
+      return window.scrollY;
+    });
+
+    // Add animation bindings to elements
+    lax.addElements(".selector", {
+      scrollY: {
+        translateY: [
+          [0, 200],
+          [0, -100],
+        ],
+      },
+    });
+  };
+</script>

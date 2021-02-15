@@ -4,7 +4,7 @@
 </div>
 <div class="main-div">
   <h3>What Clients Say</h3>
-  <div class="text-container">
+  <div class="text-container selector">
     <p class="test-text">
 <!-- Testimonial 1 -->
             <img class = "test-image" src="/Lewis-min.jpg" alt="Sitting black labrador">
@@ -97,3 +97,25 @@ According to Nir one or two lesson’s would fix the issue out.  Not convinced,
 <p class="sign"> <i> David, Jane and Stella </i></p> <br>    </p>
   </div>
 </div>
+
+          <!-- Lax.js -->
+<script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+    <script>
+window.onload = function () {
+    lax.init()
+
+    // Add a driver that we use to control our animations
+    lax.addDriver('scrollY', function () {
+      return window.scrollY
+    })
+
+    // Add animation bindings to elements
+    lax.addElements('.selector', {
+      scrollY: {
+        translateY: [
+          [0,200],
+          [0,-100]
+        ],
+      }
+    })
+  }    </script>

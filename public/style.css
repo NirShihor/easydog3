@@ -95,9 +95,10 @@ html {
   }
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 500px) {
   p {
     font-size: 1.5rem !important;
+    line-height: 2.5rem !important;
   }
 }
 
@@ -130,6 +131,12 @@ html {
   }
 }
 
+@media screen and (min-width: 650px) {
+  .topnav a {
+    display: inline;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .topnav {
     position: absolute;
@@ -141,7 +148,6 @@ html {
   }
   .topnav.responsive a {
     float: none;
-    display: block;
     text-align: left;
   }
 }

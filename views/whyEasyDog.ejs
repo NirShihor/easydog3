@@ -4,7 +4,7 @@
 </div>
 <div class="main-div">
   <h3>Why Easy Dog</h3>
-  <div class="welcome-text text-container">
+  <div class="welcome-text text-container selector">
     <p>
 If I happen to go to the park nowadays, I am struck by how different things have become in terms of dog ownership and training. <strong><u>With very few exceptions, people simply have no real control over their dogs</strong></u>.  None whatsoever. You can have a big dog, covered in mud, bounding towards you and your dog, and you can see exactly what is about to happen: you are both going to need a bath when you get home... At the same time the owner stands in the distance and shouts: "That's fine; she doesn't do anything", or something to that effect. No one there, not the owner, not you, nor anyone else watching, really has any expectation that the owner would be able to stop his or her dog from running towards you or jumping all over you. 
 <br><br>
@@ -18,3 +18,25 @@ The remarkable thing is that, while the nonsensical concept of 'Ignore Bad Behav
 </p> 
   </div>
 </div>
+
+          <!-- Lax.js -->
+<script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+    <script>
+window.onload = function () {
+    lax.init()
+
+    // Add a driver that we use to control our animations
+    lax.addDriver('scrollY', function () {
+      return window.scrollY
+    })
+
+    // Add animation bindings to elements
+    lax.addElements('.selector', {
+      scrollY: {
+        translateY: [
+          [0,200],
+          [0,-100]
+        ],
+      }
+    })
+  }    </script>
